@@ -64,7 +64,7 @@ function buildCharts(sample) {
 
     // Render the Bubble Chart
     let bubblayout = {
-      title: "Bacteria Cultures Per Sample", hovermode: "closest", xaxis: {title: "OTU ID"},
+      title: "Bacteria Cultures Per Sample", hovermode: "closest", xaxis: {title: "OTU ID"}, yaxis: {title: "Number of Bacteria"}
     };
 
     Plotly.newPlot("bubble", [bubble1], bubblayout);
@@ -86,7 +86,8 @@ function buildCharts(sample) {
    
     // Render the Bar Chart
     let barlayout = {
-      title: "Top 10 Bacteria Culteres Found"
+      title: "Top 10 Bacteria Culteres Found",
+      xaxis: {title: "Number of Bacteria"}
     };
 
     Plotly.newPlot("bar", [barchart], barlayout)
